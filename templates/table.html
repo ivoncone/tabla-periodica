@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	<title> Periodic Table </title>
+	<link rel="stylesheet" href='/static/style.css' />
+</head>
+	<body>
+		<div class="title">Tabla periodica</div>
+		<div class="periodic-table">
+			<div class="space-1"></div>
+			<div class="space-2"></div>
+			{% for element in elements %}
+			<div class="element-1">
+				<div class="element-inner">
+					{% for cell in element %}
+					<div class="title">{{ cell }}</div>
+					<div class="desc"></div>
+					{% endfor %}
+						
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</body>
+</html>

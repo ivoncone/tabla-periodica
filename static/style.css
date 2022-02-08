@@ -1,0 +1,70 @@
+body {
+	background: #1c2b2d;
+	font-family: "Poppins", "sans-serif";
+	margin: 100px;
+}
+a {
+	text-decoration: none;
+
+}
+.title{
+	display: grid;
+	font-size: 50px;
+	font-family: sans-serif;
+	color: whitesmoke;
+	position: relative;
+
+}
+.periodic-table {
+	display: grid;
+	grid-template-columns: repeat(9, 100px);
+	grid-template-rows: repeat(4, 100px);
+	grid gap: auto;
+	max-width: 1200px;
+	justify-content: center:
+
+}
+.element-1{
+	padding: 4px;
+	position: relative;
+	z-index: 1;
+	cursor: default:
+	transition: all 0.3s ease;
+
+}
+.element-1 .element-inner{
+	background: #202e38;
+	padding: 10px 15px;
+	width:  calc(100% - 20px);
+	height: calc(100% - 20px);
+	transition: inherit;
+}
+.element-1 .title{
+	font: 700 26.1538px "Poppins", sans-serif;
+	margin:  0.3m 0 0;
+	transition: 0.8s ease 600ms;
+
+}
+.element-1 .desc{
+	font:  500 12px"Poppins", sans-serif;
+	margin-top: -0.2em;
+
+}
+.element-1:hover{
+	transform: scale(1.12);
+	z-index: 10;
+}
+.element-1:hover .element-inner{
+	background: transparent;
+}
+.element-1:hover .title, .element-1:hover .desc{
+	-webkit-text-fill-color:  #222;
+
+}
+.element-1:hover:after{
+	top: 105%;
+	opacity: : 1;
+}
+.element-1{
+	cursor: pointer;
+}
