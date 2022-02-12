@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	<title> Periodic Table </title>
+	<link rel="stylesheet" href='/static/style.css' />
+</head>
+	<body>
+		<div class="title"><h2>Tabla periódica</h2></div>
+		<div class="flex-container">
+			{% for element in elements %}
+			<div><h3>{{ element.symbol }}</h3></div>
+				{% endfor %}	
+			</div>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+{% extends 'index.html' %}
+{% block content %}
+<h1>Lista de elementos en la tabla periodica:</h1>
+	<br/>
+	<div class="shadow-sm p-3 mb-5 bg-body rounded">
+		<form method="POST">
+			{{ form.hidden_tag() }}
+
+			<p style="color: black;">{{ form.symbol.label(class_="form-control-label") }}</p>
+			{{ form.symbol(class="form-control") }}
+			<br/>
+			<p style="color: black;">{{ form.name.label(class_="form-control-label") }}</p>
+			{{ form.name(class="form-control") }}
+			<br/>
+			<p style="color: black;">{{ form.atomic_number.label(class_="form-control-label") }}</p>
+			{{ form.atomic_number(class="form-control") }}
+			<br/>
+			<p style="color: black;">{{ form.atomic_weight.label(class_="form-control-label") }}</p>
+			{{ form.atomic_weight(class="form-control") }}
+			<br/>
+			<br/>
+			{{ form.submit(class="btn btn-warning") }}
+
+		</form>
+
+{% endblock %}
