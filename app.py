@@ -60,7 +60,7 @@ elements = (
 
 @app.route("/")
 def index():
-	elements = Elements.query.order_by(Elements.name)
+	elements = Elements.query.order_by(Elements.atomic_number)
 	return render_template("index.html", elements=elements)
 
 @app.route('/element/add', methods=['GET', 'POST'])
@@ -76,5 +76,4 @@ def add_element():
 		db.session.add(element)
 		db.session.commit()
 	return render_template("add_element.html", form=form)
-
 

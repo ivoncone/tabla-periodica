@@ -9,7 +9,8 @@
 		<div class="title"><h2>Tabla periódica</h2></div>
 		<div class="flex-container">
 			{% for element in elements %}
-			<div><h3>{{ element.symbol }}</h3></div>
+			<div><h3>{{ element.symbol }}</h3>
+				<p>{{ element.atomic_number }}</p></div>
 				{% endfor %}	
 			</div>
 	</body>
